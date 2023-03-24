@@ -42,18 +42,15 @@
             const marker = new google.maps.Marker({
                 position: AnimalCocinaProvenza,
                 map: map,
+                icon: 'assets/yasuo.png'
             });
-
-            featureLayer.style = (options) => {
-                if (options.feature.placeId == "ChIJ35wnETIpRI4RCntbvb2RwEk") {
-                    // Hana, HI
-                    return featureStyleOptions;
-                }
-                if (options.feature.displayName == "Punto Accesible") {
-                    return featureStyleOptions;
-                }
-            };
-
+            
+            var infoWindow = new google.maps.InfoWindow({
+                content: '<h3>Animal Cocina Provenza</h3><p>Informacion adicional bla bla <a href="www.google.com">Ir al reto</a></p>'
+            });
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxZujlzwl-m-bsR7pU6WCww66mb9Pi1UQ&callback=initMap"></script>
