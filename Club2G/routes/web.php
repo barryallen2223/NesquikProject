@@ -18,3 +18,5 @@ Route::get('/about', 'App\Http\Controllers\HomeController@about')->name("home.ab
 Route::get('/treasure_hunt', 'App\Http\Controllers\TreasureController@index')->name("treasure.index");
 Route::get('/treasure_hunt/{id}', 'App\Http\Controllers\TreasureController@show')->name("treasure.show"); 
 Route::get('/admin', 'App\Http\Controllers\Admin\AdminHomeController@index')->name("admin.home.index");
+Route::get('/experience', 'App\Http\Controllers\ExperienceController@index')->name("experience.index");
+Route::get('/experience/{id}', 'App\Http\Controllers\ExperienceController@show')->name("experience.show"); 
