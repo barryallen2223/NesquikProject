@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Treasure extends Model
 {
+    
     public function getId()
     {
     return $this->attributes['id'];
