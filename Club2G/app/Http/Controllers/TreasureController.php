@@ -22,4 +22,6 @@ class TreasureController extends Controller
  $viewData["treasure"] = $treasure;
  return view('treasure.show')->with("viewData", $viewData);
  }
+
+ 
 }

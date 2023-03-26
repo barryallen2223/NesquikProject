@@ -47,12 +47,12 @@ class Treasure extends Model
     $this->attributes['startsAt'] = $startsAt;
     }
    
-    public function getEndssAt()
+    public function getEndsAt()
     {
     return $this->attributes['endsAt'];
     }
    
-    public function setEndssAt($endsAt)
+    public function setEndsAt($endsAt)
     {
     $this->attributes['endsAt'] = $endsAt;
     }
@@ -96,4 +96,15 @@ class Treasure extends Model
     {
     $this->attributes['updated_at'] = $updatedAt;
     } 
+    public function validate($request)
+    {
+        $request->validate([
+        "name" => "required|max:255",
+        "startsAt" => "required|max:255",
+        "endsAt" => "required|max:255",
+        "points" => "required|numeric|gt:0",
+        "description" => "required",
+        'image' => 'image',
+        ]);
+    }
 }

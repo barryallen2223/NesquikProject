@@ -14,7 +14,7 @@
  </h5>
  <p class="card-text">{{  $viewData["treasure"]->getDescription() }}</p>
  <p class="card-text">Fecha de inicio: {{  $viewData["treasure"]->getStartsAt() }}</p>
- <p class="card-text">Fecha de finalización: {{  $viewData["treasure"]->getEndssAt() }}</p>
+ <p class="card-text">Fecha de finalización: {{  $viewData["treasure"]->getEndsAt() }}</p>
  <p class="card-text"><small class="text-muted">Aceptar</small></p>
  <p class="card-text"><small class="text-muted">Volver a la lista</small></p>
  </div>

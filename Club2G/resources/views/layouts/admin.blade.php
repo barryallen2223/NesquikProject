@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
  crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrapicons.css">
  <link href="{{ asset('/css/admin.css') }}" rel="stylesheet" />
  <title>@yield('title', 'Admin - Online Store')</title>
 </head>
@@ -16,12 +17,10 @@
  <span class="fs-4">Admin Panel</span>
  </a>
  <hr />
-Practical Laravel
-71
  <ul class="nav flex-column">
  <li><a href="{{ route('admin.home.index') }}" class="nav-link text-white">- Admin -
 Home</a></li>
- <li><a href="#" class="nav-link text-white">- Admin - Products</a></li>
+ <li><a href="{{ route('admin.treasure.index') }}" class="nav-link text-white">- Admin - Búsquedas del tesoro</a></li>
  <li>
  <a href="{{ route('home.index') }}" class="mt-2 btn bg-primary text-white">Go back to the
 home page</a>
