@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Admin;
+namespace app\Http\Controllers\admin;
 use App\Models\Treasure;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
