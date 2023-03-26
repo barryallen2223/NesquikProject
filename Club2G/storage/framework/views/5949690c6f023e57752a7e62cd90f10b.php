@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', $viewData["title"]); ?>
 <?php $__env->startSection('content'); ?>
 <div class="card mb-4">
