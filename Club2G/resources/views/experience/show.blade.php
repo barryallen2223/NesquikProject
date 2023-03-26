@@ -14,6 +14,7 @@
  </h5>
  <p class="card-text">{{  $viewData["experience"]->getDescription() }}</p>
  <p class="card-text"><small class="text-muted">Aceptar</small></p>
+ <button class="btn btn-dark btn-custom">Haz clic aquí</button>
  <p class="card-text"><small class="text-muted">Volver a la lista</small></p>
  </div>
  </div>

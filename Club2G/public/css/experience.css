@@ -1,0 +1,24 @@
+.btn-custom {
+    color: white;
+    border-color: white;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  
+  .btn-custom:hover {
+    background-color: rgb(174, 88, 126);
+    color: white;
+    border-color: white;
+  }
+  
+  .btn-custom:focus {
+    background-color: rgb(174, 88, 126);
+    color: rgb(249, 127, 181);
+    border-color: white;
+    box-shadow: none;
+  }
+  

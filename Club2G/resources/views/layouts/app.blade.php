@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 rel="stylesheet" crossorigin="anonymous" />
+ <link href="{{ asset('/css/experience.css') }}" rel="stylesheet" />
  <title>@yield('title', 'Club 2G')</title>
 </head>
 <body>
