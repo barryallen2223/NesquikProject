@@ -5,6 +5,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 rel="stylesheet" crossorigin="anonymous" />
+<link rel='stylesheet' href='<?php echo e(asset('assets/css/style.css')); ?>' type='text/css' />
+    <link rel='stylesheet' href='<?php echo e(asset('assets/css/jquery.mmenu.css')); ?>' type='text/css' />
+    <link rel='stylesheet' href='<?php echo e(asset('assets/css/responsive.css')); ?>' type='text/css' />
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato:400,700' type='text/css' />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.11.2/css/all.css?wpfas=true' type='text/css' />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css?wpfas=true' type='text/css' />
+    <?php echo $__env->yieldContent('styles'); ?>
  <title><?php echo $__env->yieldContent('title', 'Club 2G'); ?></title>
 </head>
 <body>
@@ -48,5 +55,18 @@ rel="stylesheet" crossorigin="anonymous" />
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 crossorigin="anonymous">
  </script>
+ <body class="archive post-type-archive post-type-archive-gd_place geodir_custom_posts geodir-page geodir-archive geodir_advance_search gd-map-auto">
+    <div id="ds-container">
+        <?php echo $__env->make('partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+        <?php echo $__env->renderWhen(request()->is('/'), 'partials.map', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path'])); ?>
+
+        <?php echo $__env->yieldContent('content'); ?>
+
+        <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <?php echo $__env->yieldContent('scripts'); ?>
+</body>
 </body>
 </html><?php /**PATH C:\Users\mavae\OneDrive\Escritorio\2023-1\P2\NesquikProject\Club2G\resources\views/layouts/app.blade.php ENDPATH**/ ?>
