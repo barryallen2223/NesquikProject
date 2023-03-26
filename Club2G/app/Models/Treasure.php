@@ -96,7 +96,7 @@ class Treasure extends Model
     {
     $this->attributes['updated_at'] = $updatedAt;
     } 
-    public function validate($request)
+    public static function validate($request)
     {
         $request->validate([
         "name" => "required|max:255",

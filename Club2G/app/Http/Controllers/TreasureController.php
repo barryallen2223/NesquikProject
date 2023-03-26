@@ -15,6 +15,8 @@ class TreasureController extends Controller
  }
  public function show($id)
  {
+     
+
  $viewData = [];
  $treasure = Treasure::findOrFail($id); 
  $viewData["title"] = $treasure->getName();
@@ -23,5 +25,5 @@ class TreasureController extends Controller
  return view('treasure.show')->with("viewData", $viewData);
  }
 
- 
+
 }

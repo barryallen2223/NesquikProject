@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', $viewData["title"]); ?>
 <?php $__env->startSection('content'); ?>
 <div class="card mb-4">
@@ -58,7 +57,7 @@ class="form-control">
  </div>
  </div>
  <div class="mb-3">
- <label class="form-label">Descrición</label>
+ <label class="form-label">Descripción</label>
  <textarea class="form-control" name="description"
  rows="3"><?php echo e($viewData['treasure']->getDescription()); ?></textarea>
  </div>
