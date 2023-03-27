@@ -22,6 +22,8 @@
 Home</a></li>
  <li><a href="<?php echo e(route('admin.treasure.index')); ?>" class="nav-link text-white">- Admin - Búsquedas del tesoro</a></li>
  <li>
+ <li><a href="<?php echo e(route('admin.ubication.index')); ?>" class="nav-link text-white">- Admin - Ubicaciones</a></li>
+ <li>
  <a href="<?php echo e(route('home.index')); ?>" class="mt-2 btn bg-primary text-white">Go back to the
 home page</a>
  </li>

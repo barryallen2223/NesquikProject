@@ -26,7 +26,12 @@ Route::get('/admin/treasures', 'App\Http\Controllers\Admin\AdminTreasureControll
 Route::post('/admin/treasures/store', 'App\Http\Controllers\Admin\AdminTreasureController@store')->name("admin.treasure.store");
 Route::delete('/admin/treasures/{id}/delete','App\Http\Controllers\Admin\AdminTreasureController@delete')->name("admin.treasure.delete");
 Route::get('/admin/treasures/{id}/edit','App\Http\Controllers\Admin\AdminTreasureController@edit')->name("admin.treasure.edit");
-Route::put('/admin/treasures/{id}/update','App\Http\Controllers\Admin\AdminTreasureController@update')->name("admin.treasure.update");  
+Route::put('/admin/treasures/{id}/update','App\Http\Controllers\Admin\AdminTreasureController@update')->name("admin.treasure.update");
+Route::get('/admin/ubications', 'App\Http\Controllers\Admin\AdminUbicationController@index')->name("admin.ubication.index"); 
+Route::post('/admin/ubications/store', 'App\Http\Controllers\Admin\AdminUbicationController@store')->name("admin.ubication.store");
+Route::delete('/admin/ubications/{id}/delete','App\Http\Controllers\Admin\AdminUbicationController@delete')->name("admin.ubication.delete");
+Route::get('/admin/ubications/{id}/edit','App\Http\Controllers\Admin\AdminUbicationController@edit')->name("admin.ubication.edit");
+Route::put('/admin/ubications/{id}/update','App\Http\Controllers\Admin\AdminUbicationController@update')->name("admin.ubication.update");  
 });
 
 Auth::routes();

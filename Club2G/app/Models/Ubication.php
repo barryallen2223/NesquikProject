@@ -104,4 +104,15 @@ class Ubication extends Model
     {
     $this->attributes['updated_at'] = $updatedAt;
     } 
+
+    public static function validate($request)
+    {
+        $request->validate([
+        "name" => "required|max:255",
+        "address" => "required|max:255",
+        "latitud" => "required|max:255",
+        "longitud" => "required|max:255",
+        "details" => "required|max:800",
+        ]);
+    }
 }
