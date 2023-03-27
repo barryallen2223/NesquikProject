@@ -1,6 +1,8 @@
 <?php
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * TREASURE ATTRIBUTES
@@ -97,6 +99,26 @@ class Treasure extends Model
     {
     $this->attributes['updated_at'] = $updatedAt;
     } 
+
+    protected $casts = [
+        'users' => 'array',
+    ];
+
+    public function users(): HasMany
+    {
+        return $this->hasMany(User::class);
+    }
+
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function setUsers(Collection $users): void
+    {
+        $this->users = $users;
+    }
+
     public static function validate($request)
     {
         $request->validate([

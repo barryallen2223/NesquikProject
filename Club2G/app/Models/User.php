@@ -150,4 +150,30 @@ class User extends Authenticatable
  {
  $this->attributes['updated_at'] = $updatedAt;
  } 
+
+
+ public function getTreasureId(): int
+ {
+ return $this->attributes['treasure_id'];
+ }
+  
+ public function setTreasureId(int $treasure_id): void
+ {
+     $this->attributes['treasure_id'] = $treasure_id;
+ }
+ 
+ public function getTreasure(): Treasure
+ {
+ return $this->treasure;
+ }
+ 
+ public function setTreasure($treasure): void
+ {
+ $this->treasure_id = $treasure;
+ }
+ 
+ public function treasure()
+    {
+    return $this->hasOne(Treasure::class);
+    }
 }

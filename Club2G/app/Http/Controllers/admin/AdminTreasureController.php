@@ -23,6 +23,7 @@ class AdminTreasureController extends Controller
  $newTreasure->setPoints($request->input('points'));
  $newTreasure->setStartsAt($request->input('startsAt'));
  $newTreasure->setEndsAt($request->input('endsAt'));
+ $newTreasure->setUserIds([]);
  $newTreasure->save();
 
  return back();

@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', $viewData["title"]); ?>
 <?php $__env->startSection('subtitle', $viewData["subtitle"]); ?>
 <?php $__env->startSection('content'); ?>
@@ -14,7 +13,7 @@
  </h5>
  <p class="card-text"><?php echo e($viewData["treasure"]->getDescription()); ?></p>
  <p class="card-text">Fecha de inicio: <?php echo e($viewData["treasure"]->getStartsAt()); ?></p>
- <p class="card-text">Fecha de finalización: <?php echo e($viewData["treasure"]->getEndssAt()); ?></p>
+ <p class="card-text">Fecha de finalización: <?php echo e($viewData["treasure"]->getEndsAt()); ?></p>
  <p class="card-text"><small class="text-muted">Aceptar</small></p>
  <p class="card-text"><small class="text-muted">Volver a la lista</small></p>
  </div>
